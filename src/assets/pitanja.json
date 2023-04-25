@@ -1,0 +1,30 @@
+{
+  "pitanja": [
+    {
+      "id": 1,
+      "pitanje": "Koliko ima sura u kur'anu",
+      "odgovori": [
+        {
+          "id": 1,
+          "odgovor": "30",
+          "tacan": false
+        },
+        {
+          "id": 2,
+          "odgovor": "114",
+          "tacan": true
+        },
+        {
+          "id": 3,
+          "odgovor": "99",
+          "tacan": false
+        },
+        {
+          "id": 4,
+          "odgovor": "6666",
+          "tacan": false
+        }
+      ]
+    }
+  ]
+}
