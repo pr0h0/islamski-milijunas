@@ -23,31 +23,50 @@ const Kviz = () => {
   const [modalData, setModalData] = useState<iModal | null>(null);
 
   const pitanjaRef = useRef(getPitanja());
+  const timeoutRef = useRef<number | null>(null);
 
   useEffect(() => {
     if (!pitanjaRef.current) return;
     const pitanje = pitanjaRef.current.pop() as iPitanje;
 
-    pitanje.odgovori = shuffleArray(pitanje.odgovori);
     setTrenutnoPitanje(pitanje);
   }, []);
+
+  useEffect(() => {
+    if (!trenutnoPitanje) return;
+    setTrenutnoPitanje((pitanje) => ({
+      ...(pitanje as iPitanje),
+      odgovor: shuffleArray((pitanje as iPitanje).odgovori),
+    }));
+  }, [trenutnoPitanje?.id]); // eslint-disable-line react-hooks/exhaustive-deps
 
   if (!trenutnoPitanje) return null;
 
   const handleOdgovorClick = (odgovor: iOdgovor) => {
-    if (odgovor.tacan && trenutnoPitanjeIndex !== 15) {
-      setTrenutnoPitanje(pitanjaRef.current.pop() as iPitanje);
-      setTrenutnoPitanjeIndex((index) => index + 1);
-    } else {
-      setModalData({
-        show: true,
-        onClick: handleModalClose,
-        text:
-          odgovor.tacan && trenutnoPitanjeIndex === 15
-            ? "Cestitamo, pobjedili ste"
-            : `Izgubili ste, tacan odgovor je: ${trenutnoPitanje.odgovori.find(odgovor => odgovor.tacan)?.odgovor}`,
-      });
-    }
+    if (timeoutRef.current) return;
+    timeoutRef.current = setTimeout(() => {
+      if (odgovor.tacan && trenutnoPitanjeIndex !== 15) {
+        setTrenutnoPitanje(pitanjaRef.current.pop() as iPitanje);
+        setTrenutnoPitanjeIndex((index) => index + 1);
+      } else {
+        setModalData({
+          show: true,
+          onClick: handleModalClose,
+          content:
+            odgovor.tacan && trenutnoPitanjeIndex === 15
+              ? "Cestitamo, pobjedili ste"
+              : [
+                  "Izgubili ste",
+                  `Tacan odgovor je: ${
+                    trenutnoPitanje.odgovori.find((odgovor) => odgovor.tacan)
+                      ?.odgovor
+                  }`,
+                ],
+        });
+      }
+
+      timeoutRef.current = null;
+    }, 500);
   };
 
   const handleModalClose = () => {

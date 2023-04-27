@@ -1,8 +1,18 @@
 import styled from "styled-components";
 import iModal from "../../interfaces/iModal";
+import React from "react";
 
-const Modal = ({ show, onClick, text, buttonText = "OK" }: iModal) => {
+const Modal = ({ show, onClick, content, buttonText = "OK" }: iModal) => {
   if (!show) return null;
+
+  const text = Array.isArray(content)
+    ? content.map((row, ix) => (
+        <React.Fragment key={ix}>
+          {row}
+          <br />
+        </React.Fragment>
+      ))
+    : content;
 
   return (
     <_ModalBg>
@@ -36,6 +46,7 @@ const _ModalBg = styled.div`
 const _Modal = styled.div`
   width: 300px;
   height: auto;
+  margin-right: 64px;
 
   display: flex;
   flex-direction: column;
