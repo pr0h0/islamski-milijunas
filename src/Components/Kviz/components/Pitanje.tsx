@@ -20,4 +20,5 @@ const _Pitanje = styled.div`
   color: #fffd;
   font-size: 24px;
   text-align: center;
+  height: calc(100vh / 2 - 64px / 2);
 `;

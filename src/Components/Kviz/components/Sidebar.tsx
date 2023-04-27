@@ -22,7 +22,7 @@ const _Sidebar = styled.div`
   top: 0;
   right: 0;
   bottom: 0;
-  
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,26 +33,28 @@ const _Sidebar = styled.div`
   background-color: #fff;
 
   > div {
-    display: flex
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    flex: 1;
+    height: calc(100vh / 15 - 2px);
 
     border: 1px solid #fff;
 
     &.active {
       background-color: var(--main-color);
+      height: calc(100vh / 15 + 15px);
       span {
         color: #fff;
       }
     }
     > span {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       font-weight: 700;
       color: #000;
-      width: fit-content;
-      height: fit-content;
+      width: 100%;
+      heigh: fit-content;
+      text-align: center;
     }
   }
 `;

@@ -4,13 +4,14 @@ import Odgovor from "./Odgovor";
 
 interface iProps {
   odgovori: iOdgovor[];
+  onClick: (odgovor: iOdgovor) => void;
 }
 
-const Odgovori = ({ odgovori }: iProps) => {
+const Odgovori = ({ odgovori, onClick }: iProps) => {
   return (
     <_Odgovori>
       {odgovori.map((odgovor, i) => (
-        <Odgovor key={i} {...odgovor} />
+        <Odgovor key={i} odgovor={odgovor} onClick={onClick} />
       ))}
     </_Odgovori>
   );
@@ -20,7 +21,6 @@ export default Odgovori;
 
 const _Odgovori = styled.div`
   width: 100%;
-  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;

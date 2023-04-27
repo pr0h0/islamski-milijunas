@@ -25,6 +25,396 @@
           "tacan": false
         }
       ]
+    },
+    {
+      "id": 2,
+      "pitanje": "Koja je prva sura u kur'anu",
+      "odgovori": [
+        {
+          "id": 1,
+          "odgovor": "Ihlas",
+          "tacan": false
+        },
+        {
+          "id": 2,
+          "odgovor": "Nas",
+          "tacan": false
+        },
+        {
+          "id": 3,
+          "odgovor": "Feleq",
+          "tacan": false
+        },
+        {
+          "id": 4,
+          "odgovor": "Fatiha",
+          "tacan": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "pitanje": "Koja je druga sura u kur'anu",
+      "odgovori": [
+        {
+          "id": 1,
+          "odgovor": "Ihlas",
+          "tacan": false
+        },
+        {
+          "id": 2,
+          "odgovor": "Nas",
+          "tacan": false
+        },
+        {
+          "id": 3,
+          "odgovor": "Feleq",
+          "tacan": false
+        },
+        {
+          "id": 4,
+          "odgovor": "Bekare",
+          "tacan": true
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "pitanje": "Koja je posljednja sura u kur'anu",
+      "odgovori": [
+        {
+          "id": 1,
+          "odgovor": "Ihlas",
+          "tacan": false
+        },
+        {
+          "id": 2,
+          "odgovor": "Nas",
+          "tacan": true
+        },
+        {
+          "id": 3,
+          "odgovor": "Feleq",
+          "tacan": false
+        },
+        {
+          "id": 4,
+          "odgovor": "Fatiha",
+          "tacan": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "pitanje": "Koliko ima imanskih sarta",
+      "odgovori": [
+        {
+          "id": 1,
+          "odgovor": "3",
+          "tacan": false
+        },
+        {
+          "id": 2,
+          "odgovor": "4",
+          "tacan": false
+        },
+        {
+          "id": 3,
+          "odgovor": "5",
+          "tacan": false
+        },
+        {
+          "id": 4,
+          "odgovor": "6",
+          "tacan": true
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "pitanje": "Koliko ima islamskih sarta",
+      "odgovori": [
+        {
+          "id": 1,
+          "odgovor": "3",
+          "tacan": false
+        },
+        {
+          "id": 2,
+          "odgovor": "4",
+          "tacan": false
+        },
+        {
+          "id": 3,
+          "odgovor": "5",
+          "tacan": true
+        },
+        {
+          "id": 4,
+          "odgovor": "6",
+          "tacan": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "pitanje": "Koliko je godina zivio poslanik Muhammed s.a.w.s.",
+      "odgovori": [
+        {
+          "id": 1,
+          "odgovor": "40",
+          "tacan": false
+        },
+        {
+          "id": 2,
+          "odgovor": "60",
+          "tacan": false
+        },
+        {
+          "id": 3,
+          "odgovor": "63",
+          "tacan": true
+        },
+        {
+          "id": 4,
+          "odgovor": "68",
+          "tacan": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "pitanje": "Koliko dzuzeva ima u kur'anu",
+      "odgovori": [
+        {
+          "id": 1,
+          "odgovor": "20",
+          "tacan": false
+        },
+        {
+          "id": 2,
+          "odgovor": "30",
+          "tacan": true
+        },
+        {
+          "id": 3,
+          "odgovor": "40",
+          "tacan": false
+        },
+        {
+          "id": 4,
+          "odgovor": "50",
+          "tacan": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "pitanje": "Koliko je puta spomenuta rijec 'Ramazan' u kur'anu",
+      "odgovori": [
+        {
+          "id": 1,
+          "odgovor": "3",
+          "tacan": false
+        },
+        {
+          "id": 2,
+          "odgovor": "1",
+          "tacan": true
+        },
+        {
+          "id": 3,
+          "odgovor": "2",
+          "tacan": false
+        },
+        {
+          "id": 4,
+          "odgovor": "5",
+          "tacan": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "pitanje": "Koja je najduza sura u kur'anu",
+      "odgovori": [
+        {
+          "id": 1,
+          "odgovor": "Inaeatajna",
+          "tacan": false
+        },
+        {
+          "id": 2,
+          "odgovor": "Bekare",
+          "tacan": true
+        },
+        {
+          "id": 3,
+          "odgovor": "Fatiha",
+          "tacan": false
+        },
+        {
+          "id": 4,
+          "odgovor": "Ya-sin",
+          "tacan": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "pitanje": "Koliko je godina trajala objava",
+      "odgovori": [
+        {
+          "id": 1,
+          "odgovor": "63",
+          "tacan": false
+        },
+        {
+          "id": 2,
+          "odgovor": "23",
+          "tacan": true
+        },
+        {
+          "id": 3,
+          "odgovor": "40",
+          "tacan": false
+        },
+        {
+          "id": 4,
+          "odgovor": "12",
+          "tacan": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "pitanje": "U kojoj godini je poslanik primio objavu",
+      "odgovori": [
+        {
+          "id": 1,
+          "odgovor": "45",
+          "tacan": false
+        },
+        {
+          "id": 2,
+          "odgovor": "40",
+          "tacan": true
+        },
+        {
+          "id": 3,
+          "odgovor": "52",
+          "tacan": false
+        },
+        {
+          "id": 4,
+          "odgovor": "63",
+          "tacan": false
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "pitanje": "Koliko ima Allahovih lijepih imena",
+      "odgovori": [
+        {
+          "id": 1,
+          "odgovor": "1",
+          "tacan": false
+        },
+        {
+          "id": 2,
+          "odgovor": "99",
+          "tacan": true
+        },
+        {
+          "id": 3,
+          "odgovor": "13",
+          "tacan": false
+        },
+        {
+          "id": 4,
+          "odgovor": "149",
+          "tacan": false
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "pitanje": "Gdje se nalazi Kaba",
+      "odgovori": [
+        {
+          "id": 1,
+          "odgovor": "Medina",
+          "tacan": false
+        },
+        {
+          "id": 2,
+          "odgovor": "Mekka",
+          "tacan": true
+        },
+        {
+          "id": 3,
+          "odgovor": "Jerusalem",
+          "tacan": false
+        },
+        {
+          "id": 4,
+          "odgovor": "Bihac",
+          "tacan": false
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "pitanje": "Ko je posljednji poslanik",
+      "odgovori": [
+        {
+          "id": 1,
+          "odgovor": "Isaa",
+          "tacan": false
+        },
+        {
+          "id": 2,
+          "odgovor": "Muhammed s.a.w.s",
+          "tacan": true
+        },
+        {
+          "id": 3,
+          "odgovor": "Adem",
+          "tacan": false
+        },
+        {
+          "id": 4,
+          "odgovor": "Nuh",
+          "tacan": false
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "pitanje": "U kojoj suri se nalazi najduzi ajet",
+      "odgovori": [
+        {
+          "id": 1,
+          "odgovor": "Fatiha",
+          "tacan": false
+        },
+        {
+          "id": 2,
+          "odgovor": "Bekare",
+          "tacan": true
+        },
+        {
+          "id": 3,
+          "odgovor": "Kehf",
+          "tacan": false
+        },
+        {
+          "id": 4,
+          "odgovor": "Merjem",
+          "tacan": false
+        }
+      ]
     }
   ]
 }
